@@ -1,0 +1,297 @@
+.cuerpo{
+    background-color: #35363a;
+    margin-top: 0%;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-bottom: 0%;
+}
+
+.usuario{
+    width: 10%;
+    padding-top: 3%;
+    float: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.usuario a{
+    margin-bottom: 10%;
+}
+
+.menu {
+    width:15%;
+    padding: 3%;
+    float: left;    
+    font-size:larger;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.menu a{
+    display: block;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    margin-bottom: 10%;
+    
+}
+
+.menu a:hover {
+    color:gray;
+    cursor: pointer;
+}
+
+.contenido{
+    margin:0%;
+    padding-left: 15%;
+    width: 90%;
+    color: darkturquoise; 
+}
+
+.contenido img{
+    width: 100%;
+}
+
+.articulo {
+    text-align: justify;
+    color:white;
+    height: 25%;
+    padding:4%;
+    display: flex;
+    flex-direction: column;
+}
+
+.articulo h1{
+    text-align: center;
+}
+
+.articulo h2{
+    margin-bottom: 2%;
+}
+
+.articulo p{
+    font-size: large;
+}
+
+.articulo li{
+    font-size: large;
+}
+
+.articulo a{
+    font-size: large;
+    color: white;
+    text-decoration: none;
+}
+
+.articulo a:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+.banner{
+    text-align: justify;
+    color:white;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    flex-direction:row;
+    transition: .4s;
+    opacity: .8;
+}
+
+.banner:hover{
+    opacity: 1;
+}
+
+.texto{
+    width: 65%;
+    padding: 4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fila{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.pie{
+    width: 100%;
+    color: white;
+    background-color:#202124;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie div{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie p{
+    font-size:large;
+}
+
+.formulario{
+    padding: 6%;
+    background-color: white;
+    border-radius: 50px;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+.formulario label{
+    color: black;
+    font-size:large;
+}
+
+.formulario span{
+    float: right;
+    color: grey;
+    font-size: medium;
+}
+
+.formulario a{
+    color: #07A5B0;
+    font-size: medium;
+}
+
+.formulario a:hover{
+    color: #07A5B0;
+}
+
+.formulario p{
+    color: black;
+}
+
+h2{
+    font-size:x-large;
+}
+
+#boton{
+    display: none;
+}
+#oculto:hover>#boton{
+    display: block;
+}
+
+.mb-3 li{
+    display:block
+}
+
+#primerNombre, #segundoNombre, #primerApellido, #segundoApellido, #correo, #numeroTelefono, #rut, #ciudadResidencia{
+    width: 50%;
+}
+
+.formulario .mb-3 textarea{
+    width: 70%;
+    height: 300px;
+}
+@media screen and (max-width: 980px) {
+   
+    .contenido img{
+        width: 80%;
+    }
+
+    .menu {
+      width: 100%;
+      padding: 2%;
+      float: none;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+      height: fit-content;
+    }
+  
+    .menu a {
+      margin-bottom: 0;
+    }
+  
+    .contenido {
+      padding-left: 0;
+      width: 95%;
+    }
+    .usuario{
+        width:min-content;
+        display: inline-flex;
+        float: center;
+    }
+  
+    .articulo {
+      padding: 2%;
+      width: 80%;
+    }
+  
+    .banner {
+      flex-direction: column;
+    }
+  
+    .texto {
+      width: 100%;
+      padding: 2%;
+    }
+  
+    .imagen {
+      width: 100%;
+    }
+  
+    .pie {
+      flex-direction: column;
+      justify-content: space-evenly;
+      height: fit-content;
+    }
+  
+    .pie div {
+      height: auto;
+      padding: 2%;
+    }
+  
+    .formulario {
+      padding: 2%;
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    .form-control{
+        width: 50%;
+    }
+
+    #primerNombre, #segundoNombre, #primerApellido, #segundoApellido, #correo, #numeroTelefono, #rut, #ciudadResidencia{
+        width: 100%;
+    }
+    #correoElectronico{
+        width: 80%;
+    }
+    
+    .formulario .mb-3 textarea{
+        width: 70%;
+        height: 300px;
+    }
+    
+    .formulario .mb-3 textarea{
+        width: 90%;
+        height: 300px;
+    }
+    .fila{
+        flex-direction: column;
+    }
+  }

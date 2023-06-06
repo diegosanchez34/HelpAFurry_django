@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Somos una ONG que promueve el rescate de animales. Ayuda a un peludo adoptándolo en tu vida.">
+    <meta name="keywords" content="perros, gatos, Adopción, mascotas">
+    <meta name="author" content="Diego Sanchez, Claudio Brito, Eyleen Pino">
+    <title>Help a Furry</title>
+
+    {% load static %}
+
+    <link rel="stylesheet" href="{% static 'home/Styles.css' %}">
+    <link rel="icon" href="home/img/favicon.svg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous"> <link rel="icon" href="img\favicon.svg">
+</head>
+
+<body class="cuerpo">
+    <nav class="menu"> 
+        <a href="home/index.html" > Inicio</a>
+        <a href="html\nosotros.html"> Nosotros</a>
+        <a href="html\contactanos.html"> Contáctanos</a>
+        <a href="html\perros.html" > Perros</a>
+        <a href="html\gatos.html" > Gatos</a>
+    </nav>
+
+    <aside class="usuario"> 
+        <a href="html/login.html"><button class="btn btn-secondary">Inicia Sesión</button></a>
+        <a href="html/singin.html"><button class="btn btn-secondary">Crear Usuario</button></a>
+    </aside>
+
+    <main class="contenido">
+        
+        <img src="{% static 'home\media\banner_1.jpg' %}">
+
+
+        <div class="articulo" style="background-color: #7a9e31">
+            <h1>ONG - Ayuda a un Peludo</h1><br>
+            <p>
+                Help a Furry es una página web dedicada a ayudar a los perros y gatos callejeros a encontrar un hogar amoroso y seguro.
+                Esta plataforma funciona como un medio para conectar a los animales en situación de calle con personas que estén interesadas en adoptarlos.
+                En Help a Furry estamos comprometidos con el bienestar de los animales y nuestro objetivo es asegurarse de que cada perro o gato callejero encuentre un hogar amoroso y permanente.
+            </p>
+        </div>
+
+        <div class="articulo" style="background-color: #07A5B0">
+            <h2>¿Cómo puedes ayudar?</h2>
+            <p>Hay muchas maneras de ayudar a nuestros amigos peludos. Puedes adoptar una mascota, ser voluntario, hacer una donación o incluso compartir nuestra causa en redes sociales. ¡Cualquier ayuda es bienvenida!</p>
+        </div>
+
+        <a href="html\perros.html" class="banner" style="background-color: #005EB5">
+            <div class="imagen">
+                <img src="{% static 'home\media\Perros.jpg' %}">
+            </div>
+            <div class="texto">
+                <h2>Perros en adopción</h2><br>
+                <span>Adoptar a un perro de la calle es una oportunidad maravillosa de darle a un animal necesitado un hogar amoroso y lleno de cuidados, al mismo tiempo que recibirás la gratitud y el amor incondicional de un compañero fiel para toda la vida.</span>
+            </div>
+        </a>
+
+        <a href="html\gatos.html" class="banner" style="background-color: #E61717">
+            <div class="texto">
+                <h2>Gatos en adopción</h2><br>
+                <span>Adoptar a un gato de la calle es una oportunidad única de brindarle a un animal necesitado un hogar cálido y lleno de amor, al mismo tiempo que recibirás la compañía y el cariño de un ser independiente y fascinante que te alegrará cada día con su personalidad única.</span>
+            </div>
+            <div class="imagen">
+                <img src="{% static 'home\media\Gatos.jpg' %}">
+            </div>
+        </a> 
+    </main>    
+
+    <footer class="pie">
+        <div><p>ONG Help a Furry © 2023</p></div>
+    </footer>
+</body>
+</html>

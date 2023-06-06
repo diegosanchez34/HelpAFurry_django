@@ -5,3 +5,4 @@ pip install django   				    //instalar django en el ambiente virtual
 django-admin startproject Helpafurry .	//crear el proyecto
 python manage.py migrate			    //migrar la base de datos
 python manage.py runserver			    //correr el servidor
+python3 manage.py createsuperuser       //crear super usuario
