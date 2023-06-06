@@ -17,16 +17,16 @@
 
 <body class="cuerpo">
     <nav class="menu"> 
-        <a href="home/index.html" > Inicio</a>
-        <a href="html\nosotros.html"> Nosotros</a>
-        <a href="html\contactanos.html"> Contáctanos</a>
-        <a href="html\perros.html" > Perros</a>
-        <a href="html\gatos.html" > Gatos</a>
+        <a href="{% url 'index' %}" > Inicio</a>
+        <a href="{% url 'nosotros' %}" > Nosotros</a>
+        <a href="{% url 'contactanos' %}" > Contáctanos</a>
+        <a href="{% url 'perros' %}" > Perros</a>
+        <a href="{% url 'gatos' %}" > Gatos</a>
     </nav>
 
     <aside class="usuario"> 
-        <a href="html/login.html"><button class="btn btn-secondary">Inicia Sesión</button></a>
-        <a href="html/singin.html"><button class="btn btn-secondary">Crear Usuario</button></a>
+        <a href="{% url 'login' %}"><button class="btn btn-secondary">Inicia Sesión</button></a>
+        <a href="{% url 'singin' %}"><button class="btn btn-secondary">Crear Usuario</button></a>
     </aside>
 
     <main class="contenido">
